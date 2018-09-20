@@ -5,6 +5,17 @@ p {
   line-height: 2rem;
 }
 
+.font-size-24 {
+    font-size: 24px;
+}
+
+.font-size-20 {
+    font-size: 20px;
+}
+.margin-top-80 {
+  margin-top: 80px
+}
+
 .sidenav-trigger {
   color: #26a69a;
 }
