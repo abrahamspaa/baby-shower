@@ -1,5 +1,5 @@
 import { materiallize } from '../materiallize';
-import { initViewer } from './gallery';
+import { initViewer } from '../gallery';
 import debug from 'debug';
 
 const log = debug('app:log');
@@ -15,4 +15,4 @@ if (ENV !== 'production') {
 }
 
 materiallize();
-log(initViewer);
+initViewer();
