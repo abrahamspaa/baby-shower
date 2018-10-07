@@ -9,16 +9,16 @@ export function initViewer ( log ) {
   const options = {
     // inline: true,
     url: 'data-original',
-    ready: function (e) {
+    ready: (e) => {
       log(e.type);
     },
-    show: function (e) {
+    show: (e) => {
       log(e.type);
     },
-    shown: function (e) {
+    shown: (e) => {
       log(e.type);
     },
-    hide: function (e) {
+    hide: (e) => {
       log(e.type);
     },
     hidden: function (e) {
@@ -30,14 +30,11 @@ export function initViewer ( log ) {
     viewed: function (e) {
       log(e.type);
     },
-    zoom: function (e) {
-      log(e.type);
-    },
-    zoomed: function (e) {
-      log(e.type);
-    }
+    movable: false,
+    rotatable: false,
+    scalable: false,
+    fullscreen: false
   };
 
   new Viewer(pictures, options);
-
 }
