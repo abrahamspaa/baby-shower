@@ -33,7 +33,8 @@ export function initViewer ( log ) {
     movable: false,
     rotatable: false,
     scalable: false,
-    fullscreen: false
+    fullscreen: false,
+    interval: 2000
   };
 
   new Viewer(pictures, options);
